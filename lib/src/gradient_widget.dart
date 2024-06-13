@@ -101,7 +101,7 @@ class GradientButtonState extends State<GradientButton> with SingleTickerProvide
     final BorderRadius borderRadiusCopy = widget.shapeRadius ?? BorderRadius.circular(40.0);
 //    ShapeBorder shapeCopy = widget.shape ?? RoundedRectangleBorder(borderRadius: borderRadiusCopy);
     final ShapeBorder shapeCopy = widget.shape ?? RoundedRectangleBorder(borderRadius: borderRadiusCopy);
-    final TextStyle textStyleCopy = widget.textStyle ?? theme.textTheme.button!.copyWith(color: Colors.white);
+    //final TextStyle textStyleCopy = widget.textStyle ?? theme.textTheme.button!.copyWith(color: Colors.white);
 
     if (widget.isEnabled) {
       gradient = widget.gradient;
@@ -138,7 +138,6 @@ class GradientButtonState extends State<GradientButton> with SingleTickerProvide
               padding: const EdgeInsets.all(0.0),
               shape: shapeCopy,
               elevation: 0.0,
-              textStyle: textStyleCopy,
               onPressed: null,
               constraints: widget.constraints ??
                   BoxConstraints.loose(
